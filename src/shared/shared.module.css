@@ -1,0 +1,37 @@
+.tech_card,
+.media_card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-zinc-100);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.tech_card svg,
+.tech_card img,
+.tech_card span:first-child {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+}
+
+.media_card svg,
+.media_card img,
+.media_card span:first-child {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+}
+
+.tech_card i {
+  font-size: 18px;
+}
+
+.media_card i {
+  font-size: 18px;
+  color: var(--svg-color);
+}

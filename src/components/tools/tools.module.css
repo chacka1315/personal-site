@@ -1,0 +1,24 @@
+.tech_stack h2 {
+  font-size: 15px;
+}
+
+.techs section > div,
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techs h3 {
+  font-size: 15px;
+  margin: 40px 0 5px 0;
+  color: rgb(0, 107, 153);
+}
+
+.techs h3::before {
+  content: '<';
+}
+
+.techs h3::after {
+  content: '/>';
+}
