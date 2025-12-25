@@ -43,7 +43,7 @@ const projectsDb = () => {
       repoUrl: 'https://github.com/chacka1315/messaging-app',
       date: '2025',
       tag: 'Social media',
-      desc: `Un mini WhatsApp permettant envoies et réceptions de messages/images entre utilisateurs les inscrits.`,
+      desc: `Un mini WhatsApp permettant envoies et réceptions de messages/images entre utilisateurs et les inscrits.`,
       stack: [
         ExpressJsDark,
         Prisma,
