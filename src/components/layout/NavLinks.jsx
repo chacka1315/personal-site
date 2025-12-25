@@ -64,6 +64,14 @@ function NavLinks({ onLinkClick, menuIsOpen }) {
             : { backgroundColor: '#fff' }
         }
       >
+        <a
+          href="https://res.cloudinary.com/deeklaav9/image/upload/v1766627672/Siaka_Resume_uwim97.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          className={styles['resume-link']}
+        >
+          Voir mon CV
+        </a>
         <ul>{navList}</ul>
       </nav>
     </>
