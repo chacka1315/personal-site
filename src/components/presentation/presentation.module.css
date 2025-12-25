@@ -1,0 +1,116 @@
+/* Intro */
+
+.react_icon,
+.node_icon {
+  height: fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+.react_icon {
+  background-color: rgb(17, 143, 197, 0.2);
+}
+
+.node_icon {
+  background-color: rgb(0, 128, 0, 0.2);
+}
+.intro > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro p img {
+  width: 20px;
+  height: auto;
+  display: inline;
+}
+
+.headline {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.greeting {
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.greeting + p {
+  color: rgb(0, 107, 153);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.greeting span {
+  color: var(--color-orange-500);
+}
+
+.intro p:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 18px;
+}
+
+.available_flag {
+  display: inline-block;
+  background: var(--color-green-500);
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  border: 6px solid var(--color-green-100);
+}
+
+/* Intresets */
+.interests p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* media */
+.medias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 700px;
+  gap: 10px 5px;
+}
+
+/* contacts */
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts a {
+  color: var(--links-color);
+  text-decoration-color: var(--links-color);
+  text-decoration: underline 1px;
+  width: fit-content;
+}
+
+.contacts a:hover {
+  color: var(--links-highlight-color);
+  text-decoration-color: var(--links-highlight-color);
+}
+
+.contacts a,
+.contacts p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contacts svg {
+  height: 18px;
+  width: 18px;
+}
