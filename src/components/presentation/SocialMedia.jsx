@@ -37,7 +37,10 @@ function MyMedias() {
         <Discord />
       </MediaCard>
 
-      <MediaCard name="Instagram" link="https://instagram/mr.billionaire1315">
+      <MediaCard
+        name="Instagram"
+        link="https://www.instagram.com/mr.billionaire1315?igsh=MTlvZGU3d2J6MGV2aw=="
+      >
         <Instagram />
       </MediaCard>
     </div>

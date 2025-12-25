@@ -24,7 +24,7 @@ function Projects() {
     <section id="projects">
       <h1>Mes projets</h1>
       <p>
-        Voici une liste des applications que j'ai eu a développer. Bien que ce
+        Voici une liste des applications que j'ai eu à développer. Bien que ce
         ne soit pas une liste exhaustive, vous pouvez visiter{' '}
         <a
           href="https://github.com/chacka1315?tab=repositories"
