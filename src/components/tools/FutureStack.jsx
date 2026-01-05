@@ -23,9 +23,6 @@ function MyFutureTechs() {
     <div className={styles.techs}>
       <section>
         <div>
-          <TechCard name="TypeScript">
-            <StackIcon name="typescript" />
-          </TechCard>
           <TechCard name="NestJS">
             <StackIcon name="nestjs" />
           </TechCard>
@@ -52,9 +49,6 @@ function MyFutureTechs() {
           </TechCard>
           <TechCard name="MongoDB">
             <StackIcon name="mongodb" />
-          </TechCard>
-          <TechCard name="Python">
-            <Python />
           </TechCard>
         </div>
       </section>

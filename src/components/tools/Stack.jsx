@@ -7,7 +7,7 @@ import {
   TestingLib,
   EJS,
 } from '../../shared/StackIcons';
-import { JavaScript, ExpressJsDark, ExpressJsLight } from 'developer-icons';
+import { JavaScript, ExpressJsDark, Python, FastAPI } from 'developer-icons';
 import { FlaskConicalIcon } from 'lucide-react';
 import { useTheme } from '../layout/ThemeContext';
 
@@ -50,6 +50,12 @@ function Core() {
         <TechCard name="JavaScript">
           <JavaScript />
         </TechCard>
+        <TechCard name="TypeScript">
+          <StackIcon name="typescript" />
+        </TechCard>
+        <TechCard name="Python">
+          <Python />
+        </TechCard>
         <TechCard name="SQL">
           <i class="devicon-azuresqldatabase-plain colored"></i>
         </TechCard>
@@ -88,6 +94,9 @@ function Backend() {
         </TechCard>
         <TechCard name="Express">
           <ExpressJsDark fill="var(--svg-color)" />
+        </TechCard>
+        <TechCard name="FastAPI">
+          <FastAPI />
         </TechCard>
         <TechCard name="PostsgreSQL">
           <StackIcon name="postgresql" />

@@ -1,7 +1,7 @@
 import CIflag from '../../assets/ci.svg';
 import myPhoto from '../../assets/siaka.png';
 import styles from './presentation.module.css';
-import { Node, React } from '../../shared/StackIcons';
+import { Node, React, Python } from '../../shared/StackIcons';
 
 function Intro() {
   return (
@@ -15,13 +15,9 @@ function Intro() {
         features/&gt;
       </p>
       <p>
-        Développeur <b>full-stack JavaScript autodidacte</b> issu de{' '}
-        <a href="https://www.theodinproject.com" target="_blank">
-          The Odin Project
-        </a>{' '}
-        et basé a Abidjan, Côte d'Ivoire{' '}
-        <img src={CIflag} alt="Ivory Coast flag" />. Je conçois des applications
-        web complètes dans l'écosystème{' '}
+        Développeur <b>full-stack JavaScript/Python autodidacte</b> et basé à
+        Abidjan, Côte d'Ivoire <img src={CIflag} alt="Ivory Coast flag" />. Je
+        conçois des applications web complètes dans l'écosystème{' '}
         <span
           style={{ display: 'inline-flex', alignItems: 'center', gap: '2px' }}
         >
@@ -30,6 +26,9 @@ function Intro() {
           </span>
           <span className={styles.react_icon}>
             <React /> React
+          </span>
+          <span className={styles.python_icon}>
+            <Python /> Python
           </span>
         </span>{' '}
         avec une approche orientée compréhension des systèmes, expérience

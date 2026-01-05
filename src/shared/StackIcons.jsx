@@ -52,6 +52,10 @@ export function Node() {
   return <i class="devicon-nodejs-plain colored"></i>;
 }
 
+export function Python() {
+  return <i class="devicon-python-plain colored"></i>;
+}
+
 export function Passport() {
   return (
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/passport/passport-original.svg" />

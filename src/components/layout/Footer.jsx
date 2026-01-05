@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <div>
-        <p>Copyright &copy; 2025 siaka.d.</p>
+        <p>Copyright &copy; {new Date().getFullYear()} siaka.d.</p>
       </div>
     </footer>
   );

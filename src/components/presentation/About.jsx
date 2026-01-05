@@ -3,7 +3,8 @@ function About() {
     <section id="about-me">
       <h1>À Propos</h1>
       <p>
-        Je suis développeur full-stack JavaScript autodidacte, formé à travers{' '}
+        Je suis développeur full-stack JavaScript/Python autodidacte, formé à
+        travers{' '}
         <a href="https://www.theodinproject.com" target="_blank">
           The Odin Project
         </a>{' '}
