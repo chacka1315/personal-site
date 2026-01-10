@@ -1,7 +1,7 @@
 import styles from './tools.module.css';
 import StackIcon from 'tech-stack-icons';
-import { TechCard, Zustand } from '../../shared/StackIcons';
-import { NextJs, Python } from 'developer-icons';
+import { TechCard } from '../../shared/StackIcons';
+import { NextJs } from 'developer-icons';
 import { useTheme } from '../layout/ThemeContext';
 function FutureStack() {
   return (
@@ -31,12 +31,6 @@ function MyFutureTechs() {
           </TechCard>
           <TechCard name="Docker">
             <StackIcon name="docker" />
-          </TechCard>
-          <TechCard name="TanStack Query">
-            <StackIcon name="reactquery" />
-          </TechCard>
-          <TechCard name="Zustand">
-            <Zustand />
           </TechCard>
           <TechCard name="Tailwind">
             <StackIcon name="tailwindcss" />

@@ -1,15 +1,11 @@
 import styles from './tools.module.css';
 import StackIcon from 'tech-stack-icons';
-import {
-  TechCard,
-  Passport,
-  Jwt,
-  TestingLib,
-  EJS,
-} from '../../shared/StackIcons';
+import { TestingLib, EJS } from '../../shared/StackIcons';
+import { TechCard, Passport, Jwt } from '../../shared/StackIcons';
 import { JavaScript, ExpressJsDark, Python, FastAPI } from 'developer-icons';
 import { FlaskConicalIcon } from 'lucide-react';
 import { useTheme } from '../layout/ThemeContext';
+import { Zustand } from '../../shared/StackIcons';
 
 function Stack() {
   return (
@@ -77,6 +73,12 @@ function Frontend() {
         </TechCard>
         <TechCard name="React router">
           <StackIcon name="reactrouter" />
+        </TechCard>
+        <TechCard name="TanStack Query">
+          <StackIcon name="reactquery" />
+        </TechCard>
+        <TechCard name="Zustand">
+          <Zustand />
         </TechCard>
       </div>
     </section>

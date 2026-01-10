@@ -65,7 +65,7 @@ function NavLinks({ onLinkClick, menuIsOpen }) {
         }
       >
         <a
-          href="https://res.cloudinary.com/deeklaav9/image/upload/v1766627672/Siaka_Resume_uwim97.pdf"
+          href="https://res.cloudinary.com/deeklaav9/image/upload/v1768076335/My_Resume_ez9nix.pdf"
           rel="noopener noreferrer"
           target="_blank"
           className={styles['resume-link']}
