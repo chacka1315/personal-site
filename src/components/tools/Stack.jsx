@@ -6,6 +6,7 @@ import { JavaScript, ExpressJsDark, Python, FastAPI } from 'developer-icons';
 import { FlaskConicalIcon } from 'lucide-react';
 import { useTheme } from '../layout/ThemeContext';
 import { Zustand } from '../../shared/StackIcons';
+import { NextJs } from 'developer-icons';
 
 function Stack() {
   return (
@@ -61,6 +62,7 @@ function Core() {
 }
 
 function Frontend() {
+  const theme = useTheme();
   return (
     <section>
       <h3>Frontend</h3>
@@ -74,11 +76,20 @@ function Frontend() {
         <TechCard name="React router">
           <StackIcon name="reactrouter" />
         </TechCard>
+        <TechCard name="NextJS">
+          <NextJs />
+        </TechCard>
         <TechCard name="TanStack Query">
           <StackIcon name="reactquery" />
         </TechCard>
         <TechCard name="Zustand">
           <Zustand />
+        </TechCard>
+        <TechCard name="Tailwind">
+          <StackIcon name="tailwindcss" />
+        </TechCard>
+        <TechCard name="Shadcn/ui">
+          <StackIcon name="shadcnui" variant={theme} />
         </TechCard>
       </div>
     </section>
@@ -102,6 +113,9 @@ function Backend() {
         </TechCard>
         <TechCard name="PostsgreSQL">
           <StackIcon name="postgresql" />
+        </TechCard>
+        <TechCard name="MongoDB">
+          <StackIcon name="mongodb" />
         </TechCard>
         <TechCard name="Prisma">
           <StackIcon name="prisma" variant={theme} />

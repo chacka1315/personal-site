@@ -1,8 +1,7 @@
 import styles from './tools.module.css';
 import StackIcon from 'tech-stack-icons';
 import { TechCard } from '../../shared/StackIcons';
-import { NextJs } from 'developer-icons';
-import { useTheme } from '../layout/ThemeContext';
+
 function FutureStack() {
   return (
     <section id="learning">
@@ -18,7 +17,6 @@ function FutureStack() {
 }
 
 function MyFutureTechs() {
-  const theme = useTheme();
   return (
     <div className={styles.techs}>
       <section>
@@ -32,17 +30,14 @@ function MyFutureTechs() {
           <TechCard name="Docker">
             <StackIcon name="docker" />
           </TechCard>
-          <TechCard name="Tailwind">
-            <StackIcon name="tailwindcss" />
+          <TechCard name="Kubernetes">
+            <StackIcon name="kubernetes" />
           </TechCard>
-          <TechCard name="Shadcn/ui">
-            <StackIcon name="shadcnui" variant={theme} />
+          <TechCard name="Rust">
+            <StackIcon name="rust" />
           </TechCard>
-          <TechCard name="NextJS">
-            <NextJs />
-          </TechCard>
-          <TechCard name="MongoDB">
-            <StackIcon name="mongodb" />
+          <TechCard name="Go">
+            <StackIcon name="go" />
           </TechCard>
         </div>
       </section>
