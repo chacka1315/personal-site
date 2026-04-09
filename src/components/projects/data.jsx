@@ -11,12 +11,41 @@ import {
   VercelDark,
   Netlify2,
   CSS3,
+  NextJs,
+  TypeScript,
+  TailwindCSS,
+  ShadcnUI,
+  FastAPI,
+  Docker,
+  Cloudinary,
 } from 'developer-icons';
 
-import { Jwt, Passport, EJS } from '../../shared/StackIcons';
+import { Jwt, Passport, EJS, Zustand } from '../../shared/StackIcons';
 
 const projectsDb = () => {
   const projects = {
+    skyup: {
+      name: 'Skyup',
+      prvwUrl: 'https://skyup-pi.vercel.app/',
+      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/q_auto/f_auto/v1775757338/chrome_BKb1rTsq3r_saadts.png`,
+      repoUrl: 'https://github.com/chacka1315/skyup',
+      date: '2026',
+      tag: 'Social media',
+      desc: `Un clone de X/Twitter avec authentification, fil d'actualité, posts, likes et gestion de profil.`,
+      stack: [
+        NextJs,
+        TypeScript,
+        TailwindCSS,
+        ShadcnUI,
+        Zustand,
+        FastAPI,
+        PostgreSQL,
+        Jwt,
+        Cloudinary,
+        Docker,
+        VercelDark,
+      ],
+    },
     blogapp: {
       name: 'Personal blog',
       prvwUrl: 'https://siakablog-web-d1yr.vercel.app/',
@@ -103,16 +132,6 @@ const projectsDb = () => {
     //   desc: `Application de gestion de tâches avec persistance locale des données des utilisateurs.`,
     //   stack: [HTML5, CSS3, JavaScript, Webpack],
     // },
-    weather_app: {
-      name: 'METEO',
-      prvwUrl: 'https://chacka1315.github.io/weather-App/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526583/meteo_app_u98y1k.png`,
-      repoUrl: 'https://github.com/chacka1315/weather-App',
-      date: '2025',
-      tag: 'Forecast',
-      desc: `Application météo pour consulter la météo en temps réel pour n'importe quelle ville dans le monde.`,
-      stack: [HTML5, CSS3, JavaScript, Webpack],
-    },
   };
   const getProjects = () => projects;
 

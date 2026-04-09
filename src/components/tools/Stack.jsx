@@ -129,6 +129,9 @@ function Backend() {
         <TechCard name="EJS">
           <EJS />
         </TechCard>
+        <TechCard name="Docker">
+          <StackIcon name="docker" />
+        </TechCard>
       </div>
     </section>
   );

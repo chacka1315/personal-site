@@ -32,7 +32,12 @@ function Projects() {
         >
           mon repos
         </a>{' '}
-        pour en voir d'autres.
+        pour en voir d'autres.{' '}
+        <strong>
+          Notez que certains sites peuvent prendre 40 à 50 secondes à charger,
+          car ils sont hébergés sur un serveur qui les met en veille en cas
+          d'inactivité.
+        </strong>
       </p>
       <div className={styles.projects_list}> {projectList}</div>
     </section>

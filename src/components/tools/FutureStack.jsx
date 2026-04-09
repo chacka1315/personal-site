@@ -27,9 +27,6 @@ function MyFutureTechs() {
           <TechCard name="Redis">
             <StackIcon name="redis" />
           </TechCard>
-          <TechCard name="Docker">
-            <StackIcon name="docker" />
-          </TechCard>
           <TechCard name="Kubernetes">
             <StackIcon name="kubernetes" />
           </TechCard>
