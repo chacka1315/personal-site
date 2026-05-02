@@ -12,14 +12,20 @@ import FutureStack from './components/tools/FutureStack';
 import Footer from './components/layout/Footer';
 import ThemProvider from './components/layout/ThemeProvider';
 import MobileMenu from './components/layout/MobileMenu';
+import Loader from './components/layout/Loader';
 import { useState } from 'react';
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <ThemProvider>
-      <div className="web-page">
+      {loading && <Loader onComplete={() => setLoading(false)} />}
+      <div
+        className="web-page"
+        style={loading ? { visibility: 'hidden' } : {}}
+      >
         <Header menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
         <Sidebar />
         <main style={menuIsOpen ? { pointerEvents: 'none' } : {}}>

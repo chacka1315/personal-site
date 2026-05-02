@@ -1,10 +1,18 @@
 import styles from './presentation.module.css';
 import { Phone } from 'lucide-react';
 import { Gmail, WhatsApp } from 'developer-icons';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../../shared/animations';
 
 function Contacts() {
   return (
-    <section id="contacts">
+    <motion.section
+      id="contacts"
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h1>Contact</h1>
       <p>Je suis joingnable à tout moment sur:</p>
       <div className={styles.contacts}>
@@ -29,7 +37,7 @@ function Contacts() {
           +225 07 785 828 91
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

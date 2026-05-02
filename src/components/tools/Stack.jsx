@@ -7,6 +7,8 @@ import { FlaskConicalIcon } from 'lucide-react';
 import { useTheme } from '../layout/ThemeContext';
 import { Zustand } from '../../shared/StackIcons';
 import { NextJs } from 'developer-icons';
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer } from '../../shared/animations';
 
 function Stack() {
   return (
@@ -35,9 +37,14 @@ function MyTechs() {
 
 function Core() {
   return (
-    <section>
+    <motion.section
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h3>Core</h3>
-      <div>
+      <motion.div variants={staggerContainer}>
         <TechCard name="HTML5">
           <StackIcon name="html5" />
         </TechCard>
@@ -53,20 +60,28 @@ function Core() {
         <TechCard name="Python">
           <Python />
         </TechCard>
+        <TechCard name="php">
+          <StackIcon name="php" />
+        </TechCard>
         <TechCard name="SQL">
           <i class="devicon-azuresqldatabase-plain colored"></i>
         </TechCard>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
 function Frontend() {
   const theme = useTheme();
   return (
-    <section>
+    <motion.section
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h3>Frontend</h3>
-      <div>
+      <motion.div variants={staggerContainer}>
         <TechCard name="React">
           <StackIcon name="react" />
         </TechCard>
@@ -91,17 +106,22 @@ function Frontend() {
         <TechCard name="Shadcn/ui">
           <StackIcon name="shadcnui" variant={theme} />
         </TechCard>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
 function Backend() {
   const theme = useTheme();
   return (
-    <section>
+    <motion.section
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h3>Backend</h3>
-      <div>
+      <motion.div variants={staggerContainer}>
         <TechCard name="Node">
           <StackIcon name="nodejs" />
         </TechCard>
@@ -129,19 +149,27 @@ function Backend() {
         <TechCard name="EJS">
           <EJS />
         </TechCard>
+        <TechCard name="Laravel">
+          <StackIcon name="laravel" />
+        </TechCard>
         <TechCard name="Docker">
           <StackIcon name="docker" />
         </TechCard>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
 function Testing() {
   return (
-    <section>
+    <motion.section
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h3>Testing</h3>
-      <div>
+      <motion.div variants={staggerContainer}>
         <TechCard name="Jest">
           <StackIcon name="jest" />
         </TechCard>
@@ -154,8 +182,8 @@ function Testing() {
         <TechCard name="Supertest">
           <FlaskConicalIcon />
         </TechCard>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 export default Stack;

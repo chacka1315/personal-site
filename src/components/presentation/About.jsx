@@ -1,10 +1,18 @@
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../../shared/animations';
+
 function About() {
   return (
-    <section id="about-me">
+    <motion.section
+      id="about-me"
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h1>À Propos</h1>
       <p>
-        Je suis développeur full-stack JavaScript/Python autodidacte, formé à
-        travers{' '}
+        Je suis développeur full-stack autodidacte, formé à travers{' '}
         <a href="https://www.theodinproject.com" target="_blank">
           The Odin Project
         </a>{' '}
@@ -38,7 +46,7 @@ function About() {
         utiles, bien pensés et durables — en utilisant la technologie non comme
         une fin, mais comme un levier.
       </p>
-    </section>
+    </motion.section>
   );
 }
 

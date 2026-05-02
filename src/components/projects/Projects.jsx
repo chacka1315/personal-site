@@ -4,6 +4,8 @@ import { projectsData } from './data';
 import { useMemo } from 'react';
 import { useState } from 'react';
 import { useTheme } from '../layout/ThemeContext';
+import { staggerContainer, cardItem } from '../../shared/animations';
+import { motion } from 'framer-motion';
 
 function Projects() {
   const projects = useMemo(() => projectsData.getProjects(), []);
@@ -39,7 +41,15 @@ function Projects() {
           d'inactivité.
         </strong>
       </p>
-      <div className={styles.projects_list}> {projectList}</div>
+      <motion.div
+        className={styles.projects_list}
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        {projectList}
+      </motion.div>
     </section>
   );
 }
@@ -50,7 +60,7 @@ function ProjectItem({ project, handleHover, handleLeave, hovered }) {
   const stackList = project.stack.map((Icon, i) => <Icon key={i} />);
 
   return (
-    <div
+    <motion.div
       className={
         hovered !== project.name
           ? `${styles.project_card}`
@@ -58,6 +68,8 @@ function ProjectItem({ project, handleHover, handleLeave, hovered }) {
       }
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
+      variants={cardItem}
+      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
     >
       <div className={styles.image}>
         <img
@@ -83,11 +95,8 @@ function ProjectItem({ project, handleHover, handleLeave, hovered }) {
         </a>
         <p>{project.date}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
-// function ProjectStack({stack}) {
-//   const list = stack.map((s, i)=> <)
-// }
 export default Projects;

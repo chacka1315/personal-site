@@ -1,7 +1,17 @@
 import styles from './presentation.module.css';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../../shared/animations';
+
 function Intrests() {
   return (
-    <section id="interests" className={styles.interests}>
+    <motion.section
+      id="interests"
+      className={styles.interests}
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h1>Intérêts personnels</h1>
       <p>
         Hormis la programmation, il y'a d'autres sujets sur lesquels j'aime
@@ -26,7 +36,7 @@ function Intrests() {
       <p>
         <span>🧧</span>Les mangas
       </p>
-    </section>
+    </motion.section>
   );
 }
 

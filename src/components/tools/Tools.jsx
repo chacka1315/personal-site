@@ -4,11 +4,14 @@ import { TechCard, Windows } from '../../shared/StackIcons';
 import {
   ChatGPT,
   Chrome,
+  ClaudeAI,
   Firefox,
   PnpmDark,
   VisualStudioCode,
 } from 'developer-icons';
 import { useTheme } from '../layout/ThemeContext';
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer } from '../../shared/animations';
 
 function Tools() {
   return (
@@ -26,7 +29,16 @@ function Tools() {
 function MyTools() {
   const theme = useTheme();
   return (
-    <div className={styles.tools}>
+    <motion.div
+      className={styles.tools}
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <TechCard name="Claude Code">
+        <ClaudeAI />
+      </TechCard>
       <TechCard name="npm">
         <StackIcon name="npm" />
       </TechCard>
@@ -81,7 +93,7 @@ function MyTools() {
       <TechCard name="Firefox">
         <Firefox />
       </TechCard>
-    </div>
+    </motion.div>
   );
 }
 

@@ -2,6 +2,7 @@ import {
   ExpressJsDark,
   PostgreSQL,
   Prisma,
+  Python,
   React,
   ReactRouter,
   JavaScript,
@@ -24,10 +25,20 @@ import { Jwt, Passport, EJS, Zustand } from '../../shared/StackIcons';
 
 const projectsDb = () => {
   const projects = {
+    vyroom: {
+      name: 'Vyroom',
+      prvwUrl: 'https://vyroom.io',
+      imgUrl: '/projects/vyroom.jpg',
+      repoUrl: '',
+      date: '2026',
+      tag: 'Immobilier',
+      desc: `Vyroom est une marketplace immobilière qui simplifie la recherche, la location et la découverte de biens en Côte d'Ivoire.`,
+      stack: [TypeScript, Python],
+    },
     skyup: {
       name: 'Skyup',
       prvwUrl: 'https://skyup-pi.vercel.app/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/q_auto/f_auto/v1775757338/chrome_BKb1rTsq3r_saadts.png`,
+      imgUrl: '/projects/skyup.png',
       repoUrl: 'https://github.com/chacka1315/skyup',
       date: '2026',
       tag: 'Social media',
@@ -49,7 +60,7 @@ const projectsDb = () => {
     blogapp: {
       name: 'Personal blog',
       prvwUrl: 'https://siakablog-web-d1yr.vercel.app/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526584/blog_api1_jnip8a.png`,
+      imgUrl: '/projects/blog.png',
       repoUrl: 'https://github.com/chacka1315/blogsiaka',
       date: '2025',
       tag: 'Bloging',
@@ -68,7 +79,7 @@ const projectsDb = () => {
     msgapp: {
       name: 'iChat',
       prvwUrl: 'https://messaging-app-client-five.vercel.app/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526585/message_app_hdrt9g.png`,
+      imgUrl: '/projects/message_app.png',
       repoUrl: 'https://github.com/chacka1315/messaging-app',
       date: '2025',
       tag: 'Social media',
@@ -87,7 +98,7 @@ const projectsDb = () => {
     waldo: {
       name: "Where's Waldo?",
       prvwUrl: 'https://waldogame.vercel.app/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526586/ws_waldo_ho6uh9.jpg`,
+      imgUrl: '/projects/ws_waldo.jpg',
       repoUrl: 'https://github.com/chacka1315/where-is-waldo',
       date: '2025',
       tag: 'Gaming',
@@ -105,22 +116,12 @@ const projectsDb = () => {
     uploader: {
       name: 'File uploader',
       prvwUrl: 'https://file-uploader-9dnb.onrender.com/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526583/uploader_dxau4v.png`,
+      imgUrl: '/projects/uploader.png',
       repoUrl: 'https://github.com/chacka1315/file-uploader-app',
       date: '2025',
       tag: 'Cloud',
       desc: `Un mini Google Drive pour uploads et organisqtion de fichiers de façon simple et intuitive.`,
       stack: [ExpressJsDark, Prisma, PostgreSQL, Passport, EJS, Render],
-    },
-    shopping_cart: {
-      name: 'Shopy',
-      prvwUrl: 'https://shopingcartsiaka.netlify.app/',
-      imgUrl: `https://res.cloudinary.com/deeklaav9/image/upload/v1766526584/shopping_cart_hjudsx.png`,
-      repoUrl: 'https://github.com/chacka1315/shopping-cart',
-      date: '2025',
-      tag: 'Shopping',
-      desc: `Application e-commerce pour ajout et gestion des produits dans un panier d'achat.`,
-      stack: [React, ReactRouter, Netlify2],
     },
     // todo_list: {
     //   name: 'Todo list',

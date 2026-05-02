@@ -1,20 +1,28 @@
 import styles from './presentation.module.css';
 import { MediaCard } from '../../shared/StackIcons';
 import { Discord, Instagram } from 'developer-icons';
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer } from '../../shared/animations';
 
 function SocialMedia() {
   return (
-    <section id="social-media">
+    <motion.section
+      id="social-media"
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <h1>Réseaux sociaux</h1>
       <p>Pour ce qui est des réseaux sociaux, vous pouvez me trouver sur:</p>
       <MyMedias />
-    </section>
+    </motion.section>
   );
 }
 
 function MyMedias() {
   return (
-    <div className={styles.medias}>
+    <motion.div className={styles.medias} variants={staggerContainer}>
       <MediaCard name="GitHub" link="https://github.com/chacka1315">
         <i class="devicon-github-original"></i>
       </MediaCard>
@@ -43,7 +51,7 @@ function MyMedias() {
       >
         <Instagram />
       </MediaCard>
-    </div>
+    </motion.div>
   );
 }
 export default SocialMedia;

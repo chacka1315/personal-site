@@ -2,26 +2,30 @@ import styles from './shared.module.css';
 import jwt from '../assets/jwt.webp';
 import testinglib from '../assets/testinglib.png';
 import ejsIcon from '../assets/ejs.png';
+import { motion } from 'framer-motion';
+import { cardItem } from './animations';
+
 export function TechCard({ children, name }) {
   return (
-    <div className={styles.tech_card}>
+    <motion.div className={styles.tech_card} variants={cardItem}>
       {children}
       <span>{name}</span>
-    </div>
+    </motion.div>
   );
 }
 
 export function MediaCard({ children, name, link }) {
   return (
-    <a
+    <motion.a
       className={styles.media_card}
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      variants={cardItem}
     >
       {children}
       <span>{name}</span>
-    </a>
+    </motion.a>
   );
 }
 // --------Frontend-----------
@@ -54,6 +58,10 @@ export function Node() {
 
 export function Python() {
   return <i class="devicon-python-plain colored"></i>;
+}
+
+export function PHP() {
+  return <i class="devicon-php-plain colored"></i>;
 }
 
 export function Passport() {

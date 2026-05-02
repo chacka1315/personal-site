@@ -1,27 +1,28 @@
 /* Intro */
 
-.react_icon,
-.node_icon,
-.python_icon {
+.js_icon,
+.python_icon,
+.php_icon {
   height: fit-content;
   width: fit-content;
   display: inline-flex;
   align-items: center;
+  gap: 5px;
   border-radius: 5px;
   font-size: 12px;
   padding: 0px 10px;
 }
 
-.react_icon {
-  background-color: rgb(17, 143, 197, 0.2);
-}
-
-.node_icon {
-  background-color: rgb(0, 128, 0, 0.2);
+.js_icon {
+  background-color: rgba(247, 223, 30, 0.2);
 }
 
 .python_icon {
   background-color: rgba(169, 196, 16, 0.2);
+}
+
+.php_icon {
+  background-color: rgba(119, 123, 179, 0.2);
 }
 
 .intro > img {
